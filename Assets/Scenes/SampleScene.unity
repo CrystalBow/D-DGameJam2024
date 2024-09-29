@@ -956,6 +956,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Owner: {fileID: 1525750543}
+  Dealer: {fileID: 0}
 --- !u!1 &1581920043
 GameObject:
   m_ObjectHideFlags: 3
