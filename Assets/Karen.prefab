@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2925122223912625325}
   - component: {fileID: 871287525581206961}
+  - component: {fileID: 8386235909109716042}
   - component: {fileID: 3176472893234365898}
   - component: {fileID: 825873675455502004}
   - component: {fileID: 6450281097867322439}
@@ -92,6 +93,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8386235909109716042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7005538645459545244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cb934818709f1a469179a48d0077fd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Owner: {fileID: 7005538645459545244}
+  Dealer: {fileID: 0}
 --- !u!114 &3176472893234365898
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -341,8 +356,24 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 778404b0-e71e-44bc-a09e-2f12d7802b98
     m_ActionName: BasicMove/Dash[/XInputControllerWindows/rightTrigger,/Keyboard/m]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8386235909109716042}
+        m_TargetAssemblyTypeName: CardPouch, Assembly-CSharp
+        m_MethodName: drawCardDetect
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: c75272b6-b676-42c9-ac16-b9060f12731a
+    m_ActionName: BasicMove/Draw[/Keyboard/p,/XInputControllerWindows/dpad/up]
   m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: KeyBoard
+  m_DefaultControlScheme: 
   m_DefaultActionMap: BasicMove
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}

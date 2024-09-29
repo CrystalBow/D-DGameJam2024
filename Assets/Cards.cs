@@ -5,12 +5,17 @@ using UnityEngine;
 using Unity.Mathematics;
 using Random = System.Random;
 
-public class Cards : MonoBehaviour
+public class Cards 
 {
-    private static List<String> CardTypes;
+    private static List<String> CardTypes = new List<string>();
     private int ID;
+
+    public int ID1 => ID;
+
+    public string Name1 => Name;
+
     private string Name;
-    private Random _random;
+    private Random _random = new Random();
     
     public Cards()
     {
@@ -19,11 +24,6 @@ public class Cards : MonoBehaviour
         ID = val % 11;
         Name = CardTypes[ID];
     }
-    private void Start()
-    {
-        birthCheck();
-    }
-
     public void birthCheck()
     {
         if (CardTypes.Count == 0)

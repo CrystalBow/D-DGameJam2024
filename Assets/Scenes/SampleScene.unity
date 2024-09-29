@@ -672,6 +672,114 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1079402356
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1079402359}
+  - component: {fileID: 1079402358}
+  - component: {fileID: 1079402357}
+  m_Layer: 0
+  m_Name: TheDealer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1079402357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1079402356}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: d242390912faaaf47a3c5d9a5021648d, type: 3}
+  m_NotificationBehavior: 2
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 5b25f5f1-1ea5-4653-b5c0-90eeaa4dc8cf
+    m_ActionName: BasicMove/Run[/Keyboard/space,/XInputControllerWindows/buttonWest]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 70e3fc58-a940-4b28-9e9b-9d91eb5249e7
+    m_ActionName: BasicMove/Jump[/XInputControllerWindows/buttonSouth,/Keyboard/w]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 6195cbac-f89e-4834-9aac-5f2a0a78cddb
+    m_ActionName: BasicMove/Movement[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d,/XInputControllerWindows/leftStick]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 778404b0-e71e-44bc-a09e-2f12d7802b98
+    m_ActionName: BasicMove/Dash[/XInputControllerWindows/rightTrigger,/Keyboard/m]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1079402358}
+        m_TargetAssemblyTypeName: Dealer, Assembly-CSharp
+        m_MethodName: drawCardDetect
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 667a22af-1f2a-4eef-9a62-4e5e3313b561
+    m_ActionName: Cards and Menus/Deal Card[/Keyboard/p,/XInputControllerWindows/dpad/up]
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: Xbox360 Controller
+  m_DefaultActionMap: Cards and Menus
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
+--- !u!114 &1079402358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1079402356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21a18433ea45bcb43959adcd576e52d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TargetPouch: {fileID: 1525750544}
+--- !u!4 &1079402359
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1079402356}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.40896702, y: 1.281791, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1200957381
 GameObject:
   m_ObjectHideFlags: 0
@@ -762,6 +870,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2842883295706398964, guid: 6cf9c0a8dc3777e4ca9e5a199b418b05, type: 3}
+      propertyPath: m_DefaultControlScheme
+      value: Xbox360 Controller
+      objectReference: {fileID: 0}
+    - target: {fileID: 2842883295706398964, guid: 6cf9c0a8dc3777e4ca9e5a199b418b05, type: 3}
+      propertyPath: m_ActionEvents.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2842883295706398964, guid: 6cf9c0a8dc3777e4ca9e5a199b418b05, type: 3}
+      propertyPath: m_ActionEvents.Array.data[4].m_ActionId
+      value: 667a22af-1f2a-4eef-9a62-4e5e3313b561
+      objectReference: {fileID: 0}
+    - target: {fileID: 2842883295706398964, guid: 6cf9c0a8dc3777e4ca9e5a199b418b05, type: 3}
+      propertyPath: m_ActionEvents.Array.data[4].m_ActionName
+      value: Cards and Menus/Deal Card[/Keyboard/p,/XInputControllerWindows/dpad/up]
+      objectReference: {fileID: 0}
     - target: {fileID: 2925122223912625325, guid: 6cf9c0a8dc3777e4ca9e5a199b418b05, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.40896702
@@ -809,8 +933,29 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7005538645459545244, guid: 6cf9c0a8dc3777e4ca9e5a199b418b05, type: 3}
+      insertIndex: 2
+      addedObject: {fileID: 1525750544}
   m_SourcePrefab: {fileID: 100100000, guid: 6cf9c0a8dc3777e4ca9e5a199b418b05, type: 3}
+--- !u!1 &1525750543 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7005538645459545244, guid: 6cf9c0a8dc3777e4ca9e5a199b418b05, type: 3}
+  m_PrefabInstance: {fileID: 1525750542}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1525750544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1525750543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cb934818709f1a469179a48d0077fd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Owner: {fileID: 1525750543}
 --- !u!1 &1581920043
 GameObject:
   m_ObjectHideFlags: 3
@@ -1515,3 +1660,4 @@ SceneRoots:
   - {fileID: 70542300}
   - {fileID: 1525750542}
   - {fileID: 579963309}
+  - {fileID: 1079402359}
