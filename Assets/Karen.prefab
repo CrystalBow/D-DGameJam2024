@@ -373,7 +373,7 @@ MonoBehaviour:
     m_ActionId: c75272b6-b676-42c9-ac16-b9060f12731a
     m_ActionName: BasicMove/Draw[/Keyboard/p,/XInputControllerWindows/dpad/up]
   m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
+  m_DefaultControlScheme: Xbox360 Controller
   m_DefaultActionMap: BasicMove
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
@@ -427,10 +427,10 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.2882681, y: -0.057514295}
+  m_Offset: {x: 0.29752833, y: -0.05751431}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -441,7 +441,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.13610959, y: 0.7555642}
+  m_Size: {x: 0.1546301, y: 0.7555642}
   m_EdgeRadius: 0
 --- !u!61 &1919385727372267664
 BoxCollider2D:
@@ -472,10 +472,10 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.16680105, y: -0.0644882}
+  m_Offset: {x: -0.17914814, y: -0.0644882}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -486,5 +486,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.18648234, y: 0.7515252}
+  m_Size: {x: 0.21117651, y: 0.7515252}
   m_EdgeRadius: 0

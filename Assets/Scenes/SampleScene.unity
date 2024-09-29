@@ -301,7 +301,7 @@ MonoBehaviour:
   m_StreamingVersion: 20170927
   m_Priority: 10
   m_StandbyUpdate: 2
-  m_LookAt: {fileID: 1221621748}
+  m_LookAt: {fileID: 0}
   m_Follow: {fileID: 1221621748}
   m_Lens:
     FieldOfView: 60
@@ -852,6 +852,18 @@ MonoBehaviour:
   m_ParentHash:
   - m_Hash: 1432961145
     m_ParentHash: 756556552
+  - m_Hash: 1914514016
+    m_ParentHash: 756556552
+  - m_Hash: -290839815
+    m_ParentHash: 756556552
+  - m_Hash: 788460410
+    m_ParentHash: 756556552
+  - m_Hash: 571221864
+    m_ParentHash: 756556552
+  - m_Hash: -827840423
+    m_ParentHash: 756556552
+  - m_Hash: 81563449
+    m_ParentHash: 756556552
 --- !u!95 &1221621740 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 2304172051631743581, guid: 6cf9c0a8dc3777e4ca9e5a199b418b05, type: 3}
@@ -1033,8 +1045,8 @@ MonoBehaviour:
   m_VerticalDamping: 0.5
   m_ScreenX: 0.5
   m_ScreenY: 0.5
-  m_DeadZoneWidth: 0
-  m_DeadZoneHeight: 0
+  m_DeadZoneWidth: 0.281
+  m_DeadZoneHeight: 0.289
   m_SoftZoneWidth: 0.8
   m_SoftZoneHeight: 0.8
   m_BiasX: 0

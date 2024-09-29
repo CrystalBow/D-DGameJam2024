@@ -21,7 +21,7 @@ public class Cards
     {
         birthCheck();
         int val = _random.Next(0, 1000);
-        ID = val % 11;
+        ID = val % 12;
         Name = CardTypes[ID];
     }
     public void birthCheck()
@@ -39,6 +39,7 @@ public class Cards
             CardTypes.Add("The Idiot");
             CardTypes.Add("The Jester");
             CardTypes.Add("The Spire");
+            CardTypes.Add("The Chains");
         } 
     }
 }
