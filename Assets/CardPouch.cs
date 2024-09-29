@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -8,6 +9,7 @@ public class CardPouch : MonoBehaviour
 {
     [SerializeField] private GameObject Owner;
     [SerializeField] private GameObject Dealer;
+    private ModularMover _mover;
     private Dealer _dealer;
     private List<Cards> Collection = new List<Cards>();
     private bool isThereNewCard, drawCard;
@@ -39,6 +41,7 @@ public class CardPouch : MonoBehaviour
     void Start()
     {
         _dealer = Dealer.GetComponent<Dealer>();
+        _mover = Owner.GetComponent<ModularMover>();
     }
 
     // Update is called once per frame
@@ -46,6 +49,7 @@ public class CardPouch : MonoBehaviour
     {
         if (isThereNewCard)
         {
+            applyEffect(Collection[Collection.Count-1]);
             isThereNewCard = false;
         }
 
@@ -63,10 +67,58 @@ public class CardPouch : MonoBehaviour
 
     private void applyEffect(Cards cards)
     {
+        print(cards.ID1.ToString());
         switch (cards.ID1)
         {
             case 0:
-                
+                _mover.NumMaxJumps += 1;
+                break;
+            case 1:
+                _mover.DashAvailiable = true;
+                break;
+            case 2:
+                _mover.JumpPower += 3;
+                break;
+            case 3:
+                _mover.JumpPower -= 2;
+                break;
+            case 4:
+                _mover.Speed += 3;
+                _mover.RunSpeed += 5;
+                _mover.MaxWalk1 += 2;
+                _mover.MaxRun1 += 3;
+                break;
+            case 5:
+                _mover.Contigencies += 1;
+                break;
+            case 6:
+                if (Collection.Count > 1)
+                {
+                    undo(Collection[Collection.Count - 2]);
+                    Collection.Remove(cards);
+                }
+                break; 
+            case 7:
+                break;
+            case 8:
+                _mover.Smartness *= -1;
+                break;
+            case 9:
+                DrawCall();
+                applyEffect(Collection[Collection.Count - 1]);
+                DrawCall();
+                break;
+            case 10:
+                _mover.slip();
+                break;
+            case 11:
+                _mover.Speed -= 2;
+                _mover.RunSpeed -= 3;
+                _mover.MaxWalk1 -= 1;
+                _mover.MaxRun1 -= 2;
+                break;
+            default:
+                print("No Effect");
                 break;
         }
         
